@@ -40,6 +40,9 @@ Inclua os scripts `dev` e `production` da seguinte forma.
 ...
 ```
 
+# Para executar o projeto, entre dentro do diretorio do projeto /venda-api e digite
+`npm run dev`
+
 Nesse ponto as API'S já estão prontas para serem testadas. 
 
 ###Para Testar a `estoque-api` persista um produto via `POST`
