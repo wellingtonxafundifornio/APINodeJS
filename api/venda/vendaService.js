@@ -24,7 +24,7 @@ function callNext(req, res){
         if(produto.quantidade < req.body.quantidade){
             res.status(400).json({"StatusVenda": "Não é possivel realizar uma venda com uma quantidade maior que o existe no estoque!"})
         }
-        produto.quantidade = produto.quantidade - req.body.quantidade;
+        produto.quantidade = req.body.quantidade * -1;
          console.log('Produto retornado da estoque-api: ', produto)
 
          //Atualiza a quantidade em estoque
